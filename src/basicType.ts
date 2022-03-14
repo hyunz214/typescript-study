@@ -46,3 +46,25 @@ objValue = new String(33);
 
 //es6에서 나타난 symbol 타입
 symbolValue = Symbol();
+
+// 배열 Type
+let nameList: string[];
+// nameList = [1, 3]; //Error
+nameList = ["1", "3"];
+// nameList.push(333); //Error
+
+let user1: { name: string; score: number };
+user1 = {
+  name: "joy",
+  score: 30,
+}; // 꼭 해당하는 객체만을 반환할수밖에없음.
+
+let user2: { name: string; score: number };
+
+let tuple1: [number, string];
+// tuple1 = [1, 3]; // Error
+tuple1 = [1, "3"];
+
+let tuple2: [number, number, number];
+// tuple2 = [1, 2, 3, 4]; // Error
+tuple2 = [1, 2, 3];
